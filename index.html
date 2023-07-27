@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="responsive">
+            
+            <div class="butonlar">
+                <button data-name="html" class="active-1">
+                <h2>HTML <i class="fa-brands fa-html5" style="color: rgb(218, 130, 24);"></i></h2>
+                </button>
+                <button data-name="css">
+                <h2>CSS <i class="fa-brands fa-css3-alt" style="color: blue;"></i></h2>
+                </button>
+                <button data-name="js">
+                <h2>JS <i class="fa-brands fa-js" style="color: orange;"></i></h2>
+                </button>
+            </div>
+
+            <div class="inputAlani">
+                <textarea id="html-input" class="active" onkeyup="run()" data-name="html"></textarea>
+                <textarea id="css-input" onkeyup="run()" data-name="css"></textarea>
+                <textarea id="js-input" onkeyup="run()" data-name="js"></textarea>
+            </div>
+
+        </div>
+
+        <div class="left">
+            <div class="kart">
+                <label>HTML <i class="fa-brands fa-html5" style="color: rgb(218, 130, 24);"></i></label>
+                <textarea id="html-input" onkeyup="run()"></textarea>
+            </div>
+
+            <div class="kart">
+                <label>CSS <i class="fa-brands fa-css3-alt" style="color: blue;"></i></label>
+                <textarea id="css-input" onkeyup="run()"></textarea>
+            </div>
+
+            <div class="kart">
+                <label>JS <i class="fa-brands fa-js" style="color: orange;"></i></label>
+                <textarea id="js-input" onkeyup="run()"></textarea>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="ust">OUTPUT <span class="material-symbols-outlined">play_arrow</span></div>
+            <iframe id="output"></iframe>
+        </div>
+
+        
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
